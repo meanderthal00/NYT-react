@@ -4,16 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "seed": "node scripts/seedDB.js",
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/meanderthal00/NYT-react.git"
-  },
-  "author": "rjcdev00",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/meanderthal00/NYT-react/issues"
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.0.11",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.0"
   },
-  "homepage": "https://github.com/meanderthal00/NYT-react#readme"
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "jest": "^22.4.2",
+    "nodemon": "^1.17.2"
+  }
 }
