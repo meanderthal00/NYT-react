@@ -4,6 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
+    <title>New York Times React Search</title>
+    <!-- Bootswatch Styling for Improving the Aesthetics -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+  
+    <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+    <!-- Style to fix the issue of text extending past panel length -->
+    <style>
+      .panel-body a {
+        word-break: break-all;
+      }
+    </style>
+        
+       <!-- css link-->
+   <link rel="stylesheet" href="assets/css/style.css">
+   
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
@@ -19,10 +36,9 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-     <!--  Materialize Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+     
 
-    <title>NYT-Scraper</title>
+    
   </head>
   <body>
     <noscript>
@@ -39,20 +55,44 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    
-        <div className="container">
-          <div className="row">
-            <div className="col s12 offset-4">
-         <div id="root"></div>
+     <!-- Main Bootstrap Search -->
+  <div class="container">
+
+      <!-- Jumbotron for Title -->
+      <div class="jumbotron" style="background-color: #20315A ; color: white;">
+        <h1 class="text-center"><strong><i class="fa fa-newspaper-o"></i> New York Times Search</strong></h1>
+        
+      </div>
+      <div id="root"> </div>
+
+
+      </div>
+
+
+    <!-- <div>
+      <div class="parallax-container">
+          <div class="parallax1"><img src="assets/images/matrix_world_map-wallpaper.jpg"></div>
         </div>
+        <div class="section grey">
+          <div class="row container">
+           <div id="root">
+
+           </div>
+       
           </div>
-          </div>
-    <!-- Jquery Link -->
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <!-- js Link -->
-    <script type="text/javascript" src="assets/javascript/index.js">
+        </div>
+        <div class="parallax-container">
+          <div class="parallax2"><img src="assets/images/matrix_world_map-wallpaper.jpg"></div>
+        </div> -->
+            
+    
+         
+         
+           <!-- Import jQuery before materialize.js -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+     <script type="text/javascript" src="assets/javascript/index.js">
     </script>
-     <!--  Materialize Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   </body>
 </html>
